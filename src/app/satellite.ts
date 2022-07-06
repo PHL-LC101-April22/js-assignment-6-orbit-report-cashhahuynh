@@ -1,3 +1,5 @@
+import { logWarnings } from "protractor/built/driverProviders";
+
 export class Satellite {
 
 	name: string;
@@ -15,7 +17,7 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		return this.type === "Space Debris"
    }
 
 }
