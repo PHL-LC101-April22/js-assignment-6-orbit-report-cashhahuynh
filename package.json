@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^14.0.4",
     "@angular/platform-browser-dynamic": "~14.0.4",
     "@angular/router": "~14.0.4",
+    "latest-version": "^7.0.0",
     "rxjs": "~7.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.11.6"
@@ -29,9 +30,9 @@
     "@angular/cli": "~14.0.4",
     "@angular/compiler-cli": "~14.0.4",
     "@angular/language-service": "~14.0.4",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",

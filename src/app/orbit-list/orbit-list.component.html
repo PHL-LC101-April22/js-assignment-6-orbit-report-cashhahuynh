@@ -1,4 +1,4 @@
-<table>
+<table> <!--thought about bringing in app tag here with orbit-list...-->
     <tr class="header-row">
         <th (click)="sort('name')" class="sortable">Name</th>
         <th (click)="sort('type')" class="sortable">Type</th>
@@ -6,12 +6,12 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row">
-        <td>GPS 938</td>
-        <td>Positioning</td>
-        <td>true</td>
-        <td>HIGH</td>
-        <td>2001-11-01</td>
+    <tr class="data-row" *ngFor="let item of satellites"> <!--displayList not being recognized when using *ngFor... how to link to app.components.ts b/c fetch data? does orbit-list ts need to be linked?...-->
+        <td>{{item.name}}</td>
+        <td [class.warning]="item.isSpaceDebris()">{{item.type}}</td>
+        <td>{{item.operational}}</td>
+        <td>{{item.launchDate}}</td>
+        <td>{{item.name}}</td>
     </tr>
 </table>
 

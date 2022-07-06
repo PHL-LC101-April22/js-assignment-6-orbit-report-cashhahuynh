@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Satellite } from '../satellite';
+//import { AppComponent } from '../app.component'; //importing class...how to call?...
 
 @Component({
   selector: 'app-orbit-list',
