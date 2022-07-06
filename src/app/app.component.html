@@ -1,25 +1,7 @@
 <h1>Orbit Report</h1>
 
-<div class="search-form"> <!--put *ngFor here? AM I SUPPOSED TO innerHTML HERE? HOW TO USE CLASS SELECTOR?--> 
-	<app-orbit-list [satellites]="displayList"></app-orbit-list> <!--how do i add *ngFor here?-->
-	<!-- <script>
-		let displayListArr = document.getElementsByClassName("data-row").innerHTML = ""
-		displayListArr.innerHTML = `
-		<tr class="data-row" *ngFor="let item of displayList">
-			<td>{{item.name}}</td>
-			<td>{{item.type}}</td>
-			<td>{{item.operational}}</td>
-			<td>{{item.orbitType}}</td>
-			<td>{{item.launchDate}}</td>
-    	</tr>
-		`;
-	</script> -->
-	<p>
-		List {{displayList[0].name}}
-	</p>
-	<!-- <ol>
-		<li *ngFor ="let item of displayList">{{item.name}}</li>
-	</ol> -->
+<div class="search-form">
+	<app-orbit-list [satellites]="displayList"></app-orbit-list>
 	Search: <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value);" name="searchTerm"/>
 	<button (click)="search(searchTerm.value);">Search</button>
 </div>

@@ -1,6 +1,10 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div>Total: <span class="counts-total"><div *ngIf = "satellites.length !== 0; else zeroCount">{{satellites.length}}</div></span></div>
 </div>
+
+<ng-template #zeroCount>
+	<div>0</div>
+</ng-template>
 
 <!-- TODO 4: add logic to count number of satellites displayed -->
